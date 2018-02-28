@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-26 21:04:32">
+<sys_script action="INSERT_OR_UPDATE">
+<abort_action>false</abort_action>
+<access>package_private</access>
+<action_delete>false</action_delete>
+<action_insert>true</action_insert>
+<action_query>false</action_query>
+<action_update>true</action_update>
+<active>true</active>
+<add_message>false</add_message>
+<advanced>true</advanced>
+<change_fields>false</change_fields>
+<client_callable>false</client_callable>
+<collection/>
+<condition/>
+<description/>
+<execute_function>false</execute_function>
+<filter_condition/>
+<is_rest>false</is_rest>
+<message/>
+<name>Make Logged in Users Managers</name>
+<order>100</order>
+<priority>100</priority>
+<rest_method display_value=""/>
+<rest_method_text/>
+<rest_service display_value=""/>
+<rest_service_text/>
+<rest_variables/>
+<role_conditions/>
+<script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var userRec = new GlideRecord('sys_user');
+	userRec.get(gs.getUserID());
+	userRec.title = 'Manager';
+	userRec.update();
+	
+})(current, previous);]]></script>
+<sys_class_name>sys_script</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-02-26 21:03:11</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>bca2c5d5db2013001f5d773ebf961979</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>Make Logged in Users Managers</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_script_bca2c5d5db2013001f5d773ebf961979</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-02-26 21:03:11</sys_updated_on>
+<template/>
+<when>before</when>
+</sys_script>
+</unload>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-27 19:50:21">
+<sys_ui_page action="INSERT_OR_UPDATE">
+<category>general</category>
+<client_script><![CDATA[alert('Page loaded');]]></client_script>
+<description/>
+<direct>false</direct>
+<endpoint/>
+<html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+Sample UI Page Text
+</j:jelly>]]></html>
+<name>sample_page</name>
+<processing_script/>
+<sys_class_name>sys_ui_page</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-12-03 22:07:14</sys_created_on>
+<sys_id>3692ebf5db3203001f5d773ebf961951</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>sample_page</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_ui_page_3692ebf5db3203001f5d773ebf961951</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-12-03 22:07:14</sys_updated_on>
+</sys_ui_page>
+</unload>

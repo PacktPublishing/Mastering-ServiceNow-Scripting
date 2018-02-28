@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-26 22:40:02">
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>true</admin_overrides>
+<advanced>true</advanced>
+<condition table="task.number"/>
+<description>Allow write for number in task, if the ACL script returns true.</description>
+<name>task.number</name>
+<operation display_value="write">write</operation>
+<script><![CDATA[gs.getUser().isMemberOf(current.assignment_group);
+	]]></script>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-07 21:10:38</sys_created_on>
+<sys_id>6b1c9da1db1203001f5d773ebf961934</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_name>task.number</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_security_acl_6b1c9da1db1203001f5d773ebf961934</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-07 21:16:40</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+</unload>

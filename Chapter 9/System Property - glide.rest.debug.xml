@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-27 20:00:46">
+<sys_properties action="INSERT_OR_UPDATE">
+<choices/>
+<description>Enables or disables REST message debugging in the session debug logs.</description>
+<ignore_cache>false</ignore_cache>
+<is_private>false</is_private>
+<name>glide.rest.debug</name>
+<read_roles/>
+<suffix/>
+<sys_class_name>sys_properties</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-02-01 23:18:41</sys_created_on>
+<sys_id>dc927c1ddb0013001f5d773ebf961970</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_name>glide.rest.debug</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_properties_dc927c1ddb0013001f5d773ebf961970</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-02-03 22:18:54</sys_updated_on>
+<type>boolean</type>
+<value>true</value>
+<write_roles/>
+</sys_properties>
+</unload>

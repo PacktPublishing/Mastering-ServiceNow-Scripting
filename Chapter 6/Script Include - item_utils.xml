@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-26 23:15:44">
+<sys_script_include action="INSERT_OR_UPDATE">
+<access>package_private</access>
+<active>true</active>
+<api_name>global.item_utils</api_name>
+<client_callable>false</client_callable>
+<description/>
+<name>item_utils</name>
+<script><![CDATA[var item_utils = Class.create();
+item_utils.prototype = {
+    initialize: function() {
+    },
+	
+	getActiveTasks: function getActiveTasks(item) {
+		
+		var tasks = [];
+		var task = new GlideRecord('sc_task');
+		task.addQuery('request_item', item.sys_id);
+		task.addActiveQuery();
+		task.query();
+		while (task.next()) {			
+			tasks.push(task.number.toString());
+		}
+		return tasks;
+	},
+
+    type: 'item_utils'
+};]]></script>
+<sys_class_name>sys_script_include</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-25 22:12:53</sys_created_on>
+<sys_id>c8b35a9fdb2243001f5d773ebf9619f8</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_name>item_utils</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_script_include_c8b35a9fdb2243001f5d773ebf9619f8</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-25 22:27:11</sys_updated_on>
+</sys_script_include>
+</unload>

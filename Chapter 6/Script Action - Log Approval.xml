@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-26 23:14:04">
+<sysevent_script_action action="INSERT_OR_UPDATE">
+<active>true</active>
+<condition_script/>
+<description/>
+<event_name>approval.inserted</event_name>
+<name>Log Approval</name>
+<order>100</order>
+<script><![CDATA[gs.log('Approval Inserted');]]></script>
+<sys_class_name>sysevent_script_action</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-25 19:59:16</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>f818b1d3db2243001f5d773ebf9619ea</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>Log Approval</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sysevent_script_action_f818b1d3db2243001f5d773ebf9619ea</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-25 19:59:16</sys_updated_on>
+</sysevent_script_action>
+</unload>

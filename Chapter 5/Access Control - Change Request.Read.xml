@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-26 22:54:10">
+<sys_security_acl action="INSERT_OR_UPDATE">
+<active>true</active>
+<admin_overrides>false</admin_overrides>
+<advanced>true</advanced>
+<condition table="change_request"/>
+<description>Allow read for records in change_request, for users with role itil, and if the ACL script returns true.</description>
+<name>change_request</name>
+<operation display_value="read">read</operation>
+<script><![CDATA[answer = false;
+ if (current.category == 'Software') {
+	if (gs.getUser().isMemberOf('eCAB Approval')) {
+		answer = 'true';
+	}
+} else {
+	answer = 'true';
+}
+]]></script>
+<sys_class_name>sys_security_acl</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-13 00:37:04</sys_created_on>
+<sys_id>a9aabf4bdb5a03001f5d773ebf961970</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_name>change_request</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_security_acl_a9aabf4bdb5a03001f5d773ebf961970</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-11-13 00:44:34</sys_updated_on>
+<type display_value="record">record</type>
+</sys_security_acl>
+</unload>

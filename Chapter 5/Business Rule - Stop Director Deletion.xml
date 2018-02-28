@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-26 22:47:27">
+<sys_script action="INSERT_OR_UPDATE">
+<abort_action>false</abort_action>
+<access>package_private</access>
+<action_delete>true</action_delete>
+<action_insert>false</action_insert>
+<action_query>false</action_query>
+<action_update>false</action_update>
+<active>true</active>
+<add_message>false</add_message>
+<advanced>true</advanced>
+<change_fields>false</change_fields>
+<client_callable>false</client_callable>
+<collection>sys_user</collection>
+<condition/>
+<description/>
+<execute_function>false</execute_function>
+<filter_condition table="sys_user"/>
+<is_rest>false</is_rest>
+<message/>
+<name>Stop Director Deletion</name>
+<order>100</order>
+<priority>100</priority>
+<rest_method display_value=""/>
+<rest_method_text/>
+<rest_service display_value=""/>
+<rest_service_text/>
+<rest_variables/>
+<role_conditions/>
+<script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	if (current.title == 'Director') {
+		gs.addErrorMessage('Cannot delete Director');
+		current.setAbortAction(true);
+		action.setRedirectURL(current);
+	}
+
+})(current, previous);]]></script>
+<sys_class_name>sys_script</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-11-12 22:48:50</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>9bd1ab8fdb1a03001f5d773ebf961933</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_name>Stop Director Deletion</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_script_9bd1ab8fdb1a03001f5d773ebf961933</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-02-26 22:46:11</sys_updated_on>
+<template/>
+<when>before</when>
+</sys_script>
+</unload>

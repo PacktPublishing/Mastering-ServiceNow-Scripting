@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-27 19:56:34">
+<sys_ui_formatter action="INSERT_OR_UPDATE">
+<active>true</active>
+<angular_module/>
+<formatter>group_approval_summarizer.xml</formatter>
+<name>Group Approval Summarizer</name>
+<sys_class_name>sys_ui_formatter</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-12-10 20:19:04</sys_created_on>
+<sys_id>ed1d4b80db0303001f5d773ebf961995</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_name>Group Approval Summarizer</sys_name>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_ui_formatter_ed1d4b80db0303001f5d773ebf961995</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-12-10 21:34:01</sys_updated_on>
+<table>sysapproval_group</table>
+<type>formatter</type>
+</sys_ui_formatter>
+</unload>

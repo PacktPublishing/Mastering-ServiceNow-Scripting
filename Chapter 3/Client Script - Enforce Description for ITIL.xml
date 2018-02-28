@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-02-26 21:42:57">
+<sys_script_client action="INSERT_OR_UPDATE">
+<active>true</active>
+<applies_extended>false</applies_extended>
+<condition/>
+<description/>
+<field>active</field>
+<global>true</global>
+<messages/>
+<name>Enforce Description for ITIL</name>
+<order/>
+<script><![CDATA[function onSubmit() {
+   if (g_user.hasRole('itil') && g_form.getValue('description') == '') {
+	   g_form.addErrorMessage('Enter a description to save.');
+	   return false;
+   }
+   
+}]]></script>
+<sys_class_name>sys_script_client</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-10-15 20:11:53</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>54c1f242db7543001f5d773ebf961999</sys_id>
+<sys_mod_count>4</sys_mod_count>
+<sys_name>Enforce Description for ITIL</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_script_client_54c1f242db7543001f5d773ebf961999</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-02-26 21:41:34</sys_updated_on>
+<table>problem</table>
+<type>onSubmit</type>
+<ui_type>0</ui_type>
+<view/>
+</sys_script_client>
+</unload>
