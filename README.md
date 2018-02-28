@@ -22,19 +22,9 @@ function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 ```
 ## Hardware and Software Requirements
 
-The OpenStack installation will require the following hardware specifications:
-* A host machine with CPU hardware virtualization support
-* 8 CPU cores
-* 16 GB RAM
-* 60 GB free disk space
-
-The lab environment uses the following software and tools:
-* Operating system: CentOS 7 or Ubuntu 14.04
-* OpenStack: Mitaka and later releases
-* VirtualBox 5.0 or newer
-* Vagrant 2.0.1 or newer
-* Ansible server 2.4 or newer
-* Python 2.7
+ServiceNow developer instance:
+1. Click the link https://developer.servicenow.com and then register.
+2. Once registered request an instance through the website.
 
 
 ## Related Products
