@@ -28,8 +28,8 @@ ServiceNow developer instance:
 
 
 ## Related Products
+* [ServiceNow Application Development](https://www.packtpub.com/virtualization-and-cloud/servicenow-application-development?utm_source=github&utm_medium=repository&utm_content=9781787128712)
+
+* [Learning ServiceNow](https://www.packtpub.com/networking-and-servers/learning-servicenow?utm_source=github&utm_medium=repository&utm_content=9781785883323)
+
 * [ServiceNow Cookbook - Second Edition](https://www.packtpub.com/virtualization-and-cloud/servicenow-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_content=9781788834056)
-
-* [OpenStack Cloud Computing Cookbook - Fourth Edition](https://www.packtpub.com/virtualization-and-cloud/openstack-cloud-computing-cookbook-fourth-edition?utm_source=github&utm_medium=repository&utm_content=9781788396110)
-
-* [OpenStack: Building a Cloud Environment](https://www.packtpub.com/virtualization-and-cloud/openstack-building-cloud-environment?utm_source=github&utm_medium=repository&utm_content=9781788396110)
