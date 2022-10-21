@@ -33,3 +33,7 @@ ServiceNow developer instance:
 * [Learning ServiceNow](https://www.packtpub.com/networking-and-servers/learning-servicenow?utm_source=github&utm_medium=repository&utm_content=9781785883323)
 
 * [ServiceNow Cookbook - Second Edition](https://www.packtpub.com/virtualization-and-cloud/servicenow-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_content=9781788834056)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to download a free PDF copy of this book.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781788627092">https://packt.link/free-ebook/9781788627092 </a> </p>
